@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_474ed5d8dc4b91b47cfbd59a5ffde609 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_474ed5d8dc4b91b47cfbd59a5ffde609" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_474ed5d8dc4b91b47cfbd59a5ffde609 = L.map(
+                "map_474ed5d8dc4b91b47cfbd59a5ffde609",
+                {
+                    center: [7.534440025344189, 4.535786433893538],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fdd04428f85fdb4b494c964427ba3471 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fdd04428f85fdb4b494c964427ba3471.addTo(map_474ed5d8dc4b91b47cfbd59a5ffde609);
+        
+    
+
+        function geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98 = L.geoJson(null, {
+                onEachFeature: geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98_onEachFeature,
+            
+        });
+
+        function geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98_add (data) {
+            geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98
+                .addData(data);
+        }
+            geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98_add({"bbox": [4.034100375731725, 6.9791091981309705, 5.064115023989132, 8.08147085249783], "features": [{"bbox": [4.034100375731725, 6.9791091981309705, 5.064115023989132, 8.08147085249783], "geometry": {"coordinates": [[[4.1687691585697735, 7.104140326115157], [4.147891880206089, 7.146179104582018], [4.077095167707796, 7.112434393832189], [4.145514764294944, 7.4743502870360885], [4.139933709273237, 7.50212637003591], [4.120296665258877, 7.525923367569362], [4.104276970605724, 7.557549343027745], [4.082469517154493, 7.585454617236792], [4.054770949419776, 7.602301134189986], [4.034100375731725, 7.625116278893131], [4.0354439628685554, 7.654313463395624], [4.05229047982175, 7.679402371222466], [4.061282178629654, 7.707591864472931], [4.066449823400603, 7.736995754550435], [4.069963819974305, 7.80218557450462], [4.086396924878159, 7.847686671802421], [4.15388634637776, 7.829858302918353], [4.205149366749879, 7.866548570360237], [4.2041158379755075, 7.8889503039133615], [4.212694125633391, 7.897554429992965], [4.224062941251702, 7.905770982444892], [4.242356398129232, 7.931893419046048], [4.263543734855489, 7.954036770180778], [4.29475630006317, 7.942022000315035], [4.322351515010382, 7.917604885157289], [4.359041781552946, 7.85866791379317], [4.399866164092202, 7.850580553449788], [4.420536736880877, 7.871587022123379], [4.4494755389649185, 7.892464301386383], [4.45547000513659, 7.898458767558054], [4.461567824095766, 7.907502143209342], [4.469215935766783, 7.914711005308618], [4.471386346102975, 7.911558743041553], [4.488542922318004, 7.924968776887511], [4.507353143133059, 7.93657013650261], [4.525233188860568, 7.943520616183491], [4.5473507015736345, 7.947215480809803], [4.5525183454452645, 7.953364975713043], [4.5609932803156426, 7.965922348837296], [4.563060336964952, 8.00010630915881], [4.555618930868945, 8.034109402327033], [4.620007765146227, 8.037494207691509], [4.685326776309694, 8.030647080798133], [4.741344027604782, 8.042687689984916], [4.767595656314484, 8.053643093553887], [4.795087517574871, 8.05950836851639], [4.796844516761041, 8.052712918466398], [4.803769158919522, 8.0604643820256], [4.859683058326482, 8.06508942353804], [4.899267204717717, 8.08147085249783], [4.940918409556957, 8.080437322824196], [4.962209099969982, 8.04602082030459], [4.991974725253328, 8.026280421704087], [5.049335564584624, 8.033980211117864], [5.064115023989132, 8.030569566432348], [5.041377393651771, 7.949282538358432], [5.010578241392693, 7.921816515519765], [4.972337681238969, 7.90375560084027], [4.926138950152392, 7.84306163208862], [4.9179740736445865, 7.723043118345231], [4.907225375650569, 7.679014796695526], [4.912393018622879, 7.627209173964218], [4.991457961315859, 7.414844875790379], [4.9907344909040035, 7.374847317349804], [4.941848586443086, 7.3614631210261905], [4.898233676842722, 7.339138901838851], [4.880560336690166, 7.292320054926563], [4.872292108294175, 7.244674383915651], [4.872602165757314, 7.1695368507450326], [4.869708285908644, 7.142716783053061], [4.87198204903234, 7.1197982855624105], [4.86929487475868, 7.09819753678687], [4.858856235127121, 7.090420233906684], [4.83229454895428, 7.092513128977714], [4.819892204561597, 7.09822337520859], [4.769559360176345, 7.130908717863008], [4.732145623221925, 7.146515001366197], [4.69256147593137, 7.135456244110344], [4.650083448792088, 7.101685695838171], [4.622901645894217, 7.05543528880753], [4.615460238898891, 7.0296745874122735], [4.599750604406836, 7.008332221055127], [4.561096633103148, 6.988281764991427], [4.545490349599959, 7.007376207545917], [4.505079380009363, 7.003603826755182], [4.486992628706844, 6.9985395374696395], [4.47035281732866, 6.991149807317754], [4.448752068553119, 6.992260850457853], [4.42777143740193, 6.998487861525575], [4.3926314626718295, 6.9791091981309705], [4.364106072637128, 6.9805044621112415], [4.3588350768773125, 6.9953355983591905], [4.356147901704276, 7.011251939325518], [4.346742790847088, 7.037038479142495], [4.334547152928735, 7.061894842972606], [4.3015775903335225, 7.089748440338212], [4.255172152772616, 7.087784736476408], [4.217345004668232, 7.063651842158777], [4.176934035077636, 7.05889761033643], [4.1687691585697735, 7.104140326115157]]], "type": "Polygon"}, "id": "0", "properties": {"FCLASS_AR_1": null, "FCLASS_AR_2": null, "FCLASS_BD_1": null, "FCLASS_BD_2": null, "FCLASS_BR_1": null, "FCLASS_BR_2": null, "FCLASS_CN_1": null, "FCLASS_CN_2": null, "FCLASS_DE_1": null, "FCLASS_DE_2": null, "FCLASS_EG_1": null, "FCLASS_EG_2": null, "FCLASS_ES_1": null, "FCLASS_ES_2": null, "FCLASS_FR_1": null, "FCLASS_FR_2": null, "FCLASS_GB_1": null, "FCLASS_GB_2": null, "FCLASS_GR_1": null, "FCLASS_GR_2": null, "FCLASS_ID_1": null, "FCLASS_ID_2": null, "FCLASS_IL_1": null, "FCLASS_IL_2": null, "FCLASS_IN_1": null, "FCLASS_IN_2": null, "FCLASS_ISO_1": null, "FCLASS_ISO_2": null, "FCLASS_IT_1": null, "FCLASS_IT_2": null, "FCLASS_JP_1": null, "FCLASS_JP_2": null, "FCLASS_KO_1": null, "FCLASS_KO_2": null, "FCLASS_MA_1": null, "FCLASS_MA_2": null, "FCLASS_NL_1": null, "FCLASS_NL_2": null, "FCLASS_NP_1": null, "FCLASS_NP_2": null, "FCLASS_PK_1": null, "FCLASS_PK_2": null, "FCLASS_PL_1": null, "FCLASS_PL_2": null, "FCLASS_PS_1": null, "FCLASS_PS_2": null, "FCLASS_PT_1": null, "FCLASS_PT_2": null, "FCLASS_RU_1": null, "FCLASS_RU_2": null, "FCLASS_SA_1": null, "FCLASS_SA_2": null, "FCLASS_SE_1": null, "FCLASS_SE_2": null, "FCLASS_TLC_1": null, "FCLASS_TLC_2": null, "FCLASS_TR_1": null, "FCLASS_TR_2": null, "FCLASS_TW_1": null, "FCLASS_TW_2": null, "FCLASS_UA_1": null, "FCLASS_UA_2": null, "FCLASS_US_1": null, "FCLASS_US_2": null, "FCLASS_VN_1": null, "FCLASS_VN_2": null, "abbrev_1": null, "abbrev_2": null, "adm0_a3_1": "NGA", "adm0_a3_2": "NGA", "adm0_label_1": 2, "adm0_label_2": 2, "adm0_sr_1": 1, "adm0_sr_2": 1, "adm1_code_1": "NGA-2855", "adm1_code_2": "NGA-2855", "admin_1": "Nigeria", "admin_2": "Nigeria", "area_sqkm_1": 0.0, "area_sqkm_2": 0.0, "check_me_1": 20, "check_me_2": 20, "code_hasc_1": "NG.OS", "code_hasc_2": "NG.OS", "code_local_1": null, "code_local_2": null, "datarank_1": 2, "datarank_2": 2, "diss_me_1": 2855, "diss_me_2": 2855, "featurecla_1": "Admin-1 states provinces", "featurecla_2": "Admin-1 states provinces", "fips_1": "NI42", "fips_2": "NI42", "fips_alt_1": null, "fips_alt_2": null, "gadm_level_1": 1, "gadm_level_2": 1, "geonunit_1": "Nigeria", "geonunit_2": "Nigeria", "gn_a1_code_1": "NG.42", "gn_a1_code_2": "NG.42", "gn_id_1": 2597365.0, "gn_id_2": 2597365.0, "gn_level_1": 1.0, "gn_level_2": 1.0, "gn_name_1": "Osun State", "gn_name_2": "Osun State", "gn_region_1": null, "gn_region_2": null, "gns_adm1_1": "NI42", "gns_adm1_2": "NI42", "gns_id_1": 9153501.0, "gns_id_2": 9153501.0, "gns_lang_1": "por", "gns_lang_2": "por", "gns_level_1": 1.0, "gns_level_2": 1.0, "gns_name_1": "Osun", "gns_name_2": "Osun", "gns_region_1": null, "gns_region_2": null, "gu_a3_1": "NGA", "gu_a3_2": "NGA", "hasc_maybe_1": null, "hasc_maybe_2": null, "iso_3166_2_1": "NG-OS", "iso_3166_2_2": "NG-OS", "iso_a2_1": "NG", "iso_a2_2": "NG", "labelrank_1": 3, "labelrank_2": 3, "latitude_1": 7.47613, "latitude_2": 7.47613, "longitude_1": 4.54911, "longitude_2": 4.54911, "mapcolor13_1": 2, "mapcolor13_2": 2, "mapcolor9_1": 5, "mapcolor9_2": 5, "max_label_1": 11.0, "max_label_2": 11.0, "min_label_1": 6.6, "min_label_2": 6.6, "min_zoom_1": 6.6, "min_zoom_2": 6.6, "name_1": "Osun", "name_2": "Osun", "name_alt_1": null, "name_alt_2": null, "name_ar_1": "\u0648\u0644\u0627\u064a\u0629 \u0623\u0648\u0634\u0648\u0646", "name_ar_2": "\u0648\u0644\u0627\u064a\u0629 \u0623\u0648\u0634\u0648\u0646", "name_bn_1": "\u0993\u09b8\u09c1\u09a8 \u0985\u0999\u09cd\u0997\u09b0\u09be\u099c\u09cd\u09af", "name_bn_2": "\u0993\u09b8\u09c1\u09a8 \u0985\u0999\u09cd\u0997\u09b0\u09be\u099c\u09cd\u09af", "name_de_1": "Osun", "name_de_2": "Osun", "name_el_1": "\u039f\u03c3\u03bf\u03cd\u03bd", "name_el_2": "\u039f\u03c3\u03bf\u03cd\u03bd", "name_en_1": "Osun State", "name_en_2": "Osun State", "name_es_1": "Osun", "name_es_2": "Osun", "name_fa_1": "\u0627\u06cc\u0627\u0644\u062a \u0627\u0648\u0633\u0648\u0646", "name_fa_2": "\u0627\u06cc\u0627\u0644\u062a \u0627\u0648\u0633\u0648\u0646", "name_fr_1": "Osun", "name_fr_2": "Osun", "name_he_1": "\u05de\u05d3\u05d9\u05e0\u05ea \u05d0\u05d5\u05e1\u05d5\u05df", "name_he_2": "\u05de\u05d3\u05d9\u05e0\u05ea \u05d0\u05d5\u05e1\u05d5\u05df", "name_hi_1": "\u0913\u0936\u0941\u0928 \u0930\u093e\u091c\u094d\u092f", "name_hi_2": "\u0913\u0936\u0941\u0928 \u0930\u093e\u091c\u094d\u092f", "name_hu_1": "Osun", "name_hu_2": "Osun", "name_id_1": "Osun", "name_id_2": "Osun", "name_it_1": "Osun", "name_it_2": "Osun", "name_ja_1": "\u30aa\u30b9\u30f3\u5dde", "name_ja_2": "\u30aa\u30b9\u30f3\u5dde", "name_ko_1": "\uc624\uc21c", "name_ko_2": "\uc624\uc21c", "name_len_1": 4, "name_len_2": 4, "name_local_1": null, "name_local_2": null, "name_nl_1": "Osun", "name_nl_2": "Osun", "name_pl_1": "Osun", "name_pl_2": "Osun", "name_pt_1": "Osun", "name_pt_2": "Osun", "name_ru_1": "\u041e\u0441\u0443\u043d", "name_ru_2": "\u041e\u0441\u0443\u043d", "name_sv_1": "Osun", "name_sv_2": "Osun", "name_tr_1": "Osun Eyaleti", "name_tr_2": "Osun Eyaleti", "name_uk_1": "\u041e\u0441\u0443\u043d", "name_uk_2": "\u041e\u0441\u0443\u043d", "name_ur_1": "\u0627\u0648\u0633\u0648\u0646 \u0631\u06cc\u0627\u0633\u062a", "name_ur_2": "\u0627\u0648\u0633\u0648\u0646 \u0631\u06cc\u0627\u0633\u062a", "name_vi_1": "Bang Osun", "name_vi_2": "Bang Osun", "name_zh_1": "\u5965\u5b59\u5dde", "name_zh_2": "\u5965\u5b59\u5dde", "name_zht_1": "\u5967\u5b6b\u5dde", "name_zht_2": "\u5967\u5b6b\u5dde", "ne_id_1": 1159313799, "ne_id_2": 1159313799, "note_1": null, "note_2": null, "postal_1": "OS", "postal_2": "OS", "provnum_ne_1": 20024.0, "provnum_ne_2": 20024.0, "region_1": null, "region_2": null, "region_cod_1": null, "region_cod_2": null, "region_sub_1": null, "region_sub_2": null, "sameascity_1": -99, "sameascity_2": -99, "scalerank_1": 3, "scalerank_2": 3, "sov_a3_1": "NGA", "sov_a3_2": "NGA", "sub_code_1": null, "sub_code_2": null, "type_1": "State", "type_2": "State", "type_en_1": "State", "type_en_2": "State", "wikidataid_1": "Q682721", "wikidataid_2": "Q682721", "wikipedia_1": null, "wikipedia_2": null, "woe_id_1": 2346370.0, "woe_id_2": 2346370.0, "woe_label_1": "Osun, NG, Nigeria", "woe_label_2": "Osun, NG, Nigeria", "woe_name_1": "Osun", "woe_name_2": "Osun"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_9cb7d0f7e41ecb31d4851c6d0709ed98.addTo(map_474ed5d8dc4b91b47cfbd59a5ffde609);
+        
+</script>
+</html>

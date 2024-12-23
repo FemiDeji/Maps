@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f9da6d845221139380707b4eb8a6ab5 {
+                    position: relative;
+                    width: 500.0px;
+                    height: 300.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1f9da6d845221139380707b4eb8a6ab5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1f9da6d845221139380707b4eb8a6ab5 = L.map(
+                "map_1f9da6d845221139380707b4eb8a6ab5",
+                {
+                    center: [7.4244, 4.1084],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc964330b7d46e96f631ac7e9f2d14ac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc964330b7d46e96f631ac7e9f2d14ac.addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var marker_feec12838cb047f562cfef4655eb8149 = L.marker(
+                [8.672557, 3.394336],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_dd70c78386da8cf464aad0e34b34a6eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_feec12838cb047f562cfef4655eb8149.setIcon(icon_dd70c78386da8cf464aad0e34b34a6eb);
+        
+    
+        var popup_0bbc5ec7cb0eff2bb6c0b9faac19799c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6dfc28278eafa8b45eea5e1556a681c = $(`<div id="html_a6dfc28278eafa8b45eea5e1556a681c" style="width: 100.0%; height: 100.0%;">Shaki</div>`)[0];
+                popup_0bbc5ec7cb0eff2bb6c0b9faac19799c.setContent(html_a6dfc28278eafa8b45eea5e1556a681c);
+            
+        
+
+        marker_feec12838cb047f562cfef4655eb8149.bindPopup(popup_0bbc5ec7cb0eff2bb6c0b9faac19799c)
+        ;
+
+        
+    
+    
+            var marker_236b1e05d38db2c6e56d1fbb8ef7d2fc = L.marker(
+                [7.978027, 3.591025],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_fd5b83b8e4fdbcadf63de924dab954e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_236b1e05d38db2c6e56d1fbb8ef7d2fc.setIcon(icon_fd5b83b8e4fdbcadf63de924dab954e2);
+        
+    
+        var popup_47b83a3ba9fec967db34262d01332a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80301b250fd1e0505d94dbae1153b3e9 = $(`<div id="html_80301b250fd1e0505d94dbae1153b3e9" style="width: 100.0%; height: 100.0%;">Iseyin</div>`)[0];
+                popup_47b83a3ba9fec967db34262d01332a75.setContent(html_80301b250fd1e0505d94dbae1153b3e9);
+            
+        
+
+        marker_236b1e05d38db2c6e56d1fbb8ef7d2fc.bindPopup(popup_47b83a3ba9fec967db34262d01332a75)
+        ;
+
+        
+    
+    
+            var marker_465d69edc22d11ba4c6a84dad0a000bb = L.marker(
+                [7.610866, 4.709997],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_83fb8c6a2ce0a12b3f5703788e8cbef1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_465d69edc22d11ba4c6a84dad0a000bb.setIcon(icon_83fb8c6a2ce0a12b3f5703788e8cbef1);
+        
+    
+        var popup_ff6f61c103da0efd2b06d775fe4e665d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98fefd60310b5b90719612e1b791349a = $(`<div id="html_98fefd60310b5b90719612e1b791349a" style="width: 100.0%; height: 100.0%;">Ilesha</div>`)[0];
+                popup_ff6f61c103da0efd2b06d775fe4e665d.setContent(html_98fefd60310b5b90719612e1b791349a);
+            
+        
+
+        marker_465d69edc22d11ba4c6a84dad0a000bb.bindPopup(popup_ff6f61c103da0efd2b06d775fe4e665d)
+        ;
+
+        
+    
+    
+            var marker_a13c79a76d895cef4c5ed7fe015a8207 = L.marker(
+                [7.926275, 4.666292],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_4d48403327a0a477eaea012ac2030f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a13c79a76d895cef4c5ed7fe015a8207.setIcon(icon_4d48403327a0a477eaea012ac2030f21);
+        
+    
+        var popup_82c86143f35af0f11ac0f6a4b647e42f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b452fcbf5c520a86722f16caa62aa374 = $(`<div id="html_b452fcbf5c520a86722f16caa62aa374" style="width: 100.0%; height: 100.0%;">Ikirun</div>`)[0];
+                popup_82c86143f35af0f11ac0f6a4b647e42f.setContent(html_b452fcbf5c520a86722f16caa62aa374);
+            
+        
+
+        marker_a13c79a76d895cef4c5ed7fe015a8207.bindPopup(popup_82c86143f35af0f11ac0f6a4b647e42f)
+        ;
+
+        
+    
+    
+            var marker_f43dc38230d1147ee811623fb302a9ee = L.marker(
+                [7.490538, 4.552202],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_7e238be3aa99535d3f2d7aedee9c4697 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f43dc38230d1147ee811623fb302a9ee.setIcon(icon_7e238be3aa99535d3f2d7aedee9c4697);
+        
+    
+        var popup_2e1f52b8e0d5e6f66e956c425d3fda71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_322d0733f8ee4f2c953d251ed1ee4241 = $(`<div id="html_322d0733f8ee4f2c953d251ed1ee4241" style="width: 100.0%; height: 100.0%;">Ife</div>`)[0];
+                popup_2e1f52b8e0d5e6f66e956c425d3fda71.setContent(html_322d0733f8ee4f2c953d251ed1ee4241);
+            
+        
+
+        marker_f43dc38230d1147ee811623fb302a9ee.bindPopup(popup_2e1f52b8e0d5e6f66e956c425d3fda71)
+        ;
+
+        
+    
+    
+            var marker_f18803262f83f4591f1d422978b0a3c7 = L.marker(
+                [6.904875, 3.2072176],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_2ec7ecedb64ba857e6baec93cdee281e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f18803262f83f4591f1d422978b0a3c7.setIcon(icon_2ec7ecedb64ba857e6baec93cdee281e);
+        
+    
+        var popup_6e2cd9ffd2ee736cd11967b5d01bf833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5f8d3f7fcac71f23798d1533961a32c = $(`<div id="html_e5f8d3f7fcac71f23798d1533961a32c" style="width: 100.0%; height: 100.0%;">Ewekoro</div>`)[0];
+                popup_6e2cd9ffd2ee736cd11967b5d01bf833.setContent(html_e5f8d3f7fcac71f23798d1533961a32c);
+            
+        
+
+        marker_f18803262f83f4591f1d422978b0a3c7.bindPopup(popup_6e2cd9ffd2ee736cd11967b5d01bf833)
+        ;
+
+        
+    
+    
+            var marker_e85cf29bc73a9443c1ef492130adcc2d = L.marker(
+                [7.706935, 5.04311],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_a1f7d51abba67c3e25f5225f79adfa46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e85cf29bc73a9443c1ef492130adcc2d.setIcon(icon_a1f7d51abba67c3e25f5225f79adfa46);
+        
+    
+        var popup_dbec8e1d3b9a9c813199d15ce8333256 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6333eb60837292d161c1cd264280bc3 = $(`<div id="html_d6333eb60837292d161c1cd264280bc3" style="width: 100.0%; height: 100.0%;">Aramoko-Ekiti</div>`)[0];
+                popup_dbec8e1d3b9a9c813199d15ce8333256.setContent(html_d6333eb60837292d161c1cd264280bc3);
+            
+        
+
+        marker_e85cf29bc73a9443c1ef492130adcc2d.bindPopup(popup_dbec8e1d3b9a9c813199d15ce8333256)
+        ;
+
+        
+    
+    
+            var marker_bcced67632efad1016684d1652526689 = L.marker(
+                [6.502736, 4.777146],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_9d832d901ef716996727e0ab45e4d856 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bcced67632efad1016684d1652526689.setIcon(icon_9d832d901ef716996727e0ab45e4d856);
+        
+    
+        var popup_94dbcf464107ac8d6ee4f41f04daad6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7248075778823fd9c6e7c85d6334804c = $(`<div id="html_7248075778823fd9c6e7c85d6334804c" style="width: 100.0%; height: 100.0%;">Okitipupa</div>`)[0];
+                popup_94dbcf464107ac8d6ee4f41f04daad6c.setContent(html_7248075778823fd9c6e7c85d6334804c);
+            
+        
+
+        marker_bcced67632efad1016684d1652526689.bindPopup(popup_94dbcf464107ac8d6ee4f41f04daad6c)
+        ;
+
+        
+    
+    
+            var marker_f7cfd42b4a1bf5d12cf75a354d0f4c2f = L.marker(
+                [6.832415, 3.63216],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_b797725f82b1bd5268be0a38349d83a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7cfd42b4a1bf5d12cf75a354d0f4c2f.setIcon(icon_b797725f82b1bd5268be0a38349d83a6);
+        
+    
+        var popup_bdfbcf3c9fd32dabf7b00f08e5f0bf8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1ed964aa3d27cf113521bfcb8e5cd4 = $(`<div id="html_8c1ed964aa3d27cf113521bfcb8e5cd4" style="width: 100.0%; height: 100.0%;">Sagamu</div>`)[0];
+                popup_bdfbcf3c9fd32dabf7b00f08e5f0bf8f.setContent(html_8c1ed964aa3d27cf113521bfcb8e5cd4);
+            
+        
+
+        marker_f7cfd42b4a1bf5d12cf75a354d0f4c2f.bindPopup(popup_bdfbcf3c9fd32dabf7b00f08e5f0bf8f)
+        ;
+
+        
+    
+    
+            var marker_8f1abba8d1a2f695480bb8cc265a7fc1 = L.marker(
+                [6.618608, 3.510785],
+                {}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+    
+            var icon_6f58f65ea99d7dbb4abf33b57d20af3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f1abba8d1a2f695480bb8cc265a7fc1.setIcon(icon_6f58f65ea99d7dbb4abf33b57d20af3d);
+        
+    
+        var popup_c20e897d2c624b953bee6db346596d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3de431d02ca058b394659fd0205cc915 = $(`<div id="html_3de431d02ca058b394659fd0205cc915" style="width: 100.0%; height: 100.0%;">Ikorodu</div>`)[0];
+                popup_c20e897d2c624b953bee6db346596d5e.setContent(html_3de431d02ca058b394659fd0205cc915);
+            
+        
+
+        marker_8f1abba8d1a2f695480bb8cc265a7fc1.bindPopup(popup_c20e897d2c624b953bee6db346596d5e)
+        ;
+
+        
+    
+    
+            var poly_line_72ef51b2c624d23a83a09c304299265e = L.polyline(
+                [[8.672557, 3.394336], [7.978027, 3.591025], [7.610866, 4.709997], [7.926275, 4.666292], [7.490538, 4.552202], [6.904875, 3.2072176], [7.706935, 5.04311], [6.502736, 4.777146], [6.832415, 3.63216], [6.618608, 3.510785]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_1f9da6d845221139380707b4eb8a6ab5);
+        
+</script>
+</html>
