@@ -12,10 +12,10 @@
         font-weight: 500;
       }
       .state {
-        stroke: #ffffff;
+        stroke: #000;
         stroke-width: 1px;
       }
-      .state-label {
+      .city-label {
         font-size: 10px;
       }
       text {
@@ -58,7 +58,7 @@
       const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
       // Load the GeoJSON file
-      d3.json("gadm41_NGA_1.json")
+      d3.json("gadm41_NGA_2.json")
         .then((geoData) => {
           console.log(geoData["features"]);
           const southWestStates = [
@@ -69,6 +69,18 @@
             "Osun",
             "Oyo",
           ];
+          const cities = [
+            "Saki",
+            "Iseyin",
+            "Aramoko-Ekiti",
+            "Okitipupa",
+            "Ewekoro",
+            "Ikorodu",
+            "Ifewara",
+            "Osogbo",
+            "Ilesha",
+          ];
+
           const stateColors = {};
           southWestStates.forEach((state, index) => {
             if (!stateColors[state]) {
@@ -96,11 +108,11 @@
 
           // Add state names
           svg
-            .selectAll(".state-label")
+            .selectAll(".city-label")
             .data(data.features)
             .enter()
             .append("text")
-            .attr("class", "state-label")
+            .attr("class", "city-label")
             .attr("x", (d) => {
               const centroid = path.centroid(d); // Get centroid of each state
               return centroid[0];
@@ -109,8 +121,35 @@
               const centroid = path.centroid(d);
               return centroid[1];
             })
-            .text((d) => d.properties.NAME_1) // Use the state name
+            .text((d) =>
+              cities.includes(d.properties.NAME_2) ? d.properties.NAME_2 : ""
+            ) // Use the state name
             .style("pointer-events", "none"); // Prevent text from interfering with events
+
+          d3.json("gadm41_NGA_1.json").then((dt) => {
+            const bigdata = dt;
+            bigdata["features"] = bigdata["features"].filter((d) =>
+              southWestStates.includes(d.properties.NAME_1)
+            );
+            console.log(bigdata["features"]);
+
+            svg
+              .selectAll(".state-label")
+              .data(bigdata.features)
+              .enter()
+              .append("text")
+              .attr("class", "state-label")
+              .attr("x", (d) => {
+                const centroid = path.centroid(d); // Get centroid of each state
+                return centroid[0];
+              })
+              .attr("y", (d) => {
+                const centroid = path.centroid(d);
+                return centroid[1];
+              })
+              .text((d) => d.properties.NAME_1) // Use the state name
+              .style("pointer-events", "none"); // Prevent text from interfering with events
+          });
         })
         .catch((error) => {
           console.error("Error loading GeoJSON data:", error);
