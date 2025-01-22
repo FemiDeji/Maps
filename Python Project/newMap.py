@@ -9,6 +9,8 @@ nigeria = gpd.read_file(nigeria_shapefile)
 states_to_map = ['Osun', 'Oyo', 'Ekiti', 'Ondo', 'Ogun', 'Lagos']
 global_bounds = box(-180, -90, 180, 90)
 
+
+
 for state in states_to_map:
   d_state = nigeria[nigeria['name'] == state]
   centroid = d_state.geometry.centroid.iloc[0]
